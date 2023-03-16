@@ -1,0 +1,50 @@
+{
+        "intents": [
+          {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Greetings", "Good morning", "Good afternoon", "Good evening"],
+            "responses": ["Hello, how may I assist you?", "Hi there, how can I help you?", "Hey, what can I do for you?"],
+            "context_set": ""
+          },
+          {
+            "tag": "introduction",
+            "patterns": ["Tell me about yourself", "Who are you", "What can you do"],
+            "responses": ["I am a personal development bot designed to assist you in your journey of self-improvement. I can help you set goals, develop good habits, and provide you with resources to achieve your full potential."],
+            "context_set": ""
+          },
+          {
+            "tag": "thankful",
+            "patterns": ["Thank you", "Thanks", "Appreciate it"],
+            "responses": ["You're welcome!", "No problem, happy to help!", "Glad to be of assistance!"],
+            "context_set": ""
+          },
+          {
+            "tag": "goal_setting",
+            "patterns": ["How can I set goals", "Why is goal-setting important", "Can you help me set goals"],
+            "responses": ["Setting goals is important because it gives you a clear direction and purpose. To set goals, first identify what you want to achieve, make them specific and measurable, and create a plan to achieve them. I can assist you with setting your goals."],
+            "context_set": ""
+          },
+          {
+            "tag": "motivation",
+            "patterns": ["How can I stay motivated", "I am feeling demotivated", "What can I do to stay motivated"],
+            "responses": ["Staying motivated can be challenging, but it's important to remember your why and the benefits of achieving your goals. Celebrate small successes along the way, reward yourself, and surround yourself with positive people. I can provide you with motivational quotes and resources to help you stay motivated."],
+            "context_set": ""
+          },
+          {
+            "tag": "habit_building",
+            "patterns": ["How can I develop good habits", "What are some good habits to have", "Can you help me build good habits"],
+            "responses": ["Developing good habits takes time and consistency. Start small and build on them gradually. Identify the habits you want to develop, create a routine, and track your progress. I can provide you with habit trackers and tips to help you build good habits."],
+            "context_set": ""
+          },
+          {
+            "tag": "self-care",
+            "patterns": ["What is self-care", "Why is self-care important", "How can I practice self-care"],
+            "responses": ["Self-care is taking care of your physical, emotional, and mental health. It's important because it helps reduce stress, improve overall well-being, and prevent burnout. To practice self-care, take breaks, do activities you enjoy, prioritize sleep and nutrition, and practice mindfulness. I can provide you with self-care tips and resources."],
+            "context_set": ""
+          },
+          {
+            "tag": "personal_story",
+            "patterns": ["Can you share a personal story", "Have you ever experienced a setback", "How have you overcome challenges"],
+            "responses": ["As an AI language model, I don't have personal experiences or emotions. However, I can provide you with stories and examples of people who have overcome challenges and achieved their"]
+          }
+        ]}
