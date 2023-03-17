@@ -1,4 +1,4 @@
-<h2> Hello There <img src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?w=826&t=st=1679050803~exp=1679051403~hmac=eeff49229f8423ceb44d8fb2b0c7ba1fd8752bfe7801b67da63f810c0c1ecc53" height="25px"></h2>
+<h2> Hello There <img src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?w=826&t=st=1679050803~exp=1679051403~hmac=eeff49229f8423ceb44d8fb2b0c7ba1fd8752bfe7801b67da63f810c0c1ecc53" height="50px"></h2>
 
 This is Team Support_Bot, and this is a project on Forest Chatbot utilizing cutting-edge technologies such as Artificial Intelligence (AI), Natual Langauge Processing(NLP), Deep Learning (DL), on Intel oneAPI server using Intel oneDNN.👨
 
@@ -23,7 +23,7 @@ Our chatbot is designed to provide emotional support to users who may be experie
 
 Our chatbot is built using cutting-edge technologies such as Artificial Intelligence (AI), Natural Language Processing (NLP), and Deep Learning (DL). We utilized Intel oneAPI server and Intel oneDNN to power the chatbot and ensure high performance and accuracy. Python Kivy and KivyMD for front end, which is a cross platform applicastion software
 
-### ✅ The entire procedure is completed with the help of Intel oneDAL and AIToolkit and Intel oneDNN (TensorFlow) to get better results and faster computation(Intel oneAPI Data Analytics Library (oneDAL) and oneAPI Deep Neural Network Library (oneDNN))
+### ✅ The entire procedure is completed with the help of Intel oneDAL and AIToolkit and Intel oneDNN (TensorFlow) to get better results and faster computation and oneAPI Deep Neural Network Library (oneDNN)
 
 ![intel](https://user-images.githubusercontent.com/72274851/218504609-585bcebe-5101-4477-bdd2-3a1ba13a64a8.png)
 
