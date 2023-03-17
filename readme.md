@@ -19,7 +19,7 @@ This Bot aims to provide necessary response for the users problem in this area,B
 Our chatbot is designed to provide emotional support to users who may be experiencing loneliness or other difficult emotions. To use the chatbot, simply type in your messages to the bot and it will respond with relevant and supportive messages.
 
 ## 🚀 Technologies Used
-Our chatbot is built using cutting-edge technologies such as Artificial Intelligence (AI), Natural Language Processing (NLP), and Deep Learning (DL). We utilized Intel oneAPI server and Intel oneDNN to power the chatbot and ensure high performance and accuracy.
+Our chatbot is built using cutting-edge technologies such as Artificial Intelligence (AI), Natural Language Processing (NLP), and Deep Learning (DL). We utilized Intel oneAPI server and Intel oneDNN to power the chatbot and ensure high performance and accuracy. Python Kivy and KivyMD for front end, which is a cross platform applicastion software
 
 
 ### ✅ The entire procedure is completed with the help of Intel oneDAL and AIToolkit and Intel oneDNN (TensorFlow) to get better results and faster computation(Intel oneAPI Data Analytics Library (oneDAL) and oneAPI Deep Neural Network Library (oneDNN))
