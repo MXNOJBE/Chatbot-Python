@@ -24,5 +24,8 @@ Our chatbot is built using cutting-edge technologies such as Artificial Intellig
 
 ### ✅ The entire procedure is completed with the help of Intel oneDAL and AIToolkit and Intel oneDNN (TensorFlow) to get better results and faster computation(Intel oneAPI Data Analytics Library (oneDAL) and oneAPI Deep Neural Network Library (oneDNN))
 ![intel](https://user-images.githubusercontent.com/72274851/218504609-585bcebe-5101-4477-bdd2-3a1ba13a64a8.png)
+
+
+
 CONTRIBUTOR
 -MANOJ B E
