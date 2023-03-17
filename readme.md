@@ -3,3 +3,4 @@ Kivy, KivyMD is a cross platform application framwork that works on any platform
 requests and provide information on personal development, selfimprovement. The chatbot will be providing personalized responses to user’senquiries and make the interaction more engaging and relevant. The chatbot will be trained for providing a companionship for users
 and to provide an emotional support. The chatbot will be able to connect with individuals and provide necessary solutions and support. This project seeks to leverage the power of technology to facilitate social change by making it easier for individuals to get support and
 make a positive impact on society
+#oneapi #cloud #oneapi
