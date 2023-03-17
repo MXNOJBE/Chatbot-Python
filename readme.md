@@ -23,7 +23,7 @@ Our chatbot is designed to provide emotional support to users who may be experie
 
 Our chatbot is built using cutting-edge technologies such as Artificial Intelligence (AI), Natural Language Processing (NLP), and Deep Learning (DL). We utilized Intel oneAPI server and Intel oneDNN to power the chatbot and ensure high performance and accuracy. Python Kivy and KivyMD for front end, which is a cross platform applicastion software
 
-### ✅ The entire procedure is completed with the help of Intel oneDAL and AIToolkit and Intel oneDNN (TensorFlow) to get better results and faster computation and oneAPI Deep Neural Network Library (oneDNN)
+### ✅ The entire procedure is completed with the help of Intel oneDNN and AIToolkit to get better results and faster computation and oneAPI Deep Neural Network Library (oneDNN)
 
 ![intel](https://user-images.githubusercontent.com/72274851/218504609-585bcebe-5101-4477-bdd2-3a1ba13a64a8.png)
 
