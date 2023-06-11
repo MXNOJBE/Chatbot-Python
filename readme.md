@@ -24,7 +24,7 @@ Our chatbot is designed to provide emotional support to users who may be experie
 Our chatbot is built using cutting-edge technologies such as Artificial Intelligence (AI), Natural Language Processing (NLP), and Deep Learning (DL). We utilized Intel oneAPI server and Intel oneDNN to power the chatbot and ensure high performance and accuracy. Python Kivy and KivyMD for front end, which is a cross platform applicastion software
 
 ### ✅ Demo Picture
-<img src = "C:\Users\MANOJBE\Desktop\Screenshot 2023-03-16 183330.png"/>
+<img src = "assets/chatbot.png/">
 
 CONTRIBUTOR
 -MANOJ B E
