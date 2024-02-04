@@ -5,36 +5,28 @@ import random
 import nltk
 import numpy
 from nltk.stem import LancasterStemmer
-from tensorflow.python.keras.layers import Dense
-from tensorflow.python.keras.models import Sequential
-
-
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential, model_from_json
 from kivymd.app import MDApp
 from kivymd.uix.screenmanager import ScreenManager
-from kivymd.uix.floatlayout import MDFloatLayout
-from kivymd.uix.button import *
-from kivymd.uix.label import *
-from kivy.lang import Builder
+from kivymd.uix.label import MDLabel
 from kivy.core.window import Window
+from kivy.lang import Builder
 from kivy.properties import StringProperty, NumericProperty
-from kivy.core.text import LabelBase
 from kivy.clock import Clock
-
 
 Window.size = (350, 550)
 
-nltk.download('punkt')
-
 stemmer = LancasterStemmer()
 
-with open("backend\intents.json") as file:
+with open("backend/intents.json") as file:
     data = json.load(file)
 
 try:
     with open("chatbot.pickle", "rb") as file:
         words, labels, training, output = pickle.load(file)
 
-except:
+except FileNotFoundError:
     words = []
     labels = []
     docs_x = []
@@ -84,34 +76,28 @@ except:
         pickle.dump((words, labels, training, output), file)
 
 try:
-    yaml_file = open('chatbotmodel.yaml', 'r')
-    loaded_model_yaml = yaml_file.read()
-    yaml_file.close()
-    myChatModel = model_from_yaml(loaded_model_yaml)
-    myChatModel.load_weights("chatbotmodel.h5")
-    print("Loaded model from disk")
+    with open('chatbotmodel.json', 'r') as json_file:
+        loaded_model_json = json_file.read()
+        myChatModel = model_from_json(loaded_model_json)
+        myChatModel.load_weights("chatbotmodel.h5")
+        print("Loaded model from disk")
 
-except:
-    # Make our neural network
+except FileNotFoundError:
     myChatModel = Sequential()
     myChatModel.add(Dense(8, input_shape=[len(words)], activation='relu'))
     myChatModel.add(Dense(len(labels), activation='softmax'))
 
-    # optimize the model
     myChatModel.compile(loss='categorical_crossentropy',
                         optimizer='adam', metrics=['accuracy'])
 
-    # train the model
     myChatModel.fit(training, output, epochs=1000, batch_size=8)
 
-    # serialize model to yaml and save it to disk
-    model_yaml = myChatModel.to_json()
-    with open("chatbotmodel.yaml", "w") as y_file:
-        y_file.write(model_yaml)
+    model_json = myChatModel.to_json()
+    with open("chatbotmodel.json", "w") as json_file:
+        json_file.write(model_json)
 
-    # serialize weights to HDF5
     myChatModel.save_weights("chatbotmodel.h5")
-    print("Saved model from disk")
+    print("Saved model to disk")
 
 
 def bag_of_words(s, words):
@@ -128,15 +114,15 @@ def bag_of_words(s, words):
     return numpy.array(bag)
 
 
-def chatWithBot(inputText):
-    currentText = bag_of_words(inputText, words)
-    currentTextArray = [currentText]
-    numpyCurrentText = numpy.array(currentTextArray)
+def chat_with_bot(input_text):
+    current_text = bag_of_words(input_text, words)
+    current_text_array = [current_text]
+    numpy_current_text = numpy.array(current_text_array)
 
-    if numpy.all((numpyCurrentText == 0)):
+    if numpy.all((numpy_current_text == 0)):
         return "I didn't get that, try again"
 
-    result = myChatModel.predict(numpyCurrentText[0:1])
+    result = myChatModel.predict(numpy_current_text[0:1])
     result_index = numpy.argmax(result)
     tag = labels[result_index]
 
@@ -151,22 +137,11 @@ def chatWithBot(inputText):
         return "I didn't get that, try again"
 
 
-def chat(self):
-    print("Start talking with the chatbot (try quit to stop)")
-    inp = value
-    #x = 1
-    print(chatWithBot(inp))
-    #print("printing here also")
-    #show = ChatBot()
-    global answer
-    answer = chatWithBot(inp)
-
-
 class Command(MDLabel):
     text = StringProperty()
     size_hint_x = NumericProperty()
     halign = StringProperty()
-    font_name: "fonts\Poppins-Medium.ttf"
+    font_name = "fonts/Poppins-Medium.ttf"
     font_size = 17
 
 
@@ -174,31 +149,21 @@ class Response(MDLabel):
     text = StringProperty()
     size_hint_x = NumericProperty()
     halign = StringProperty()
-    font_name: "fonts\Poppins-Medium.ttf"
+    font_name = "fonts/Poppins-Medium.ttf"
     font_size = 17
 
 
-class ChatBot(MDApp):
+class ChatBotApp(MDApp):
 
-    def chat(self):
+    def chat(self, value):
         print("Start talking with the chatbot (try quit to stop)")
         inp = value
-        #x = 1
-        print(chatWithBot(inp))
-        #print("printing here also")
-        show = ChatBot()
+        print(chat_with_bot(inp))
         global answer
-        answer = chatWithBot(inp)
+        answer = chat_with_bot(inp)
 
     def change_screen(self, name):
-        screen_manager.set_current("name")
-
-    def build(self):
-        global screen_manager
-        screen_manager = ScreenManager()
-        screen_manager.add_widget(Builder.load_file("kv\\Chats.kv"))
-        screen_manager.add_widget(Builder.load_file("kv\\Main.kv"))
-        return screen_manager
+        screen_manager.set_current(name)
 
     def response(self, *args):
         if len(answer) < 6:
@@ -244,7 +209,7 @@ class ChatBot(MDApp):
             else:
                 size = .77
                 halign = "left"
-            chat(value)
+            self.chat(value)
             screen_manager.get_screen('chats').chat_list.add_widget(
                 Command(text=value, size_hint_x=size, halign=halign))
             Clock.schedule_once(self.response, 1)
@@ -252,5 +217,5 @@ class ChatBot(MDApp):
 
 
 if __name__ == '__main__':
-    app = ChatBot()
+    app = ChatBotApp()
     app.run()
