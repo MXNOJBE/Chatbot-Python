@@ -25,7 +25,7 @@ Our chatbot is built using cutting-edge technologies such as Artificial Intellig
 
 ### ✅ Demo Picture
 <img src = "assets/chatbot.png/">
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PS9Vq3FfqcM&t=2s/0.jpg)](https://www.youtube.com/watch?v=PS9Vq3FfqcM&t=2s)
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/vt5fpE0bzSY](https://www.youtube.com/watch?v=PS9Vq3FfqcM&t=2s)
 
 CONTRIBUTOR
 -MANOJ B E
