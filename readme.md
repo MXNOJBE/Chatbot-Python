@@ -26,7 +26,10 @@ The chatbot is built with cutting-edge technologies like Artificial Intelligence
 <img src="assets/chatbot.png" alt="Chatbot Demo"/>
 
 <h3>🎥 Demo Video</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/PS9Vq3FfqcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=PS9Vq3FfqcM" target="_blank">
+    Click here to watch the demo video on YouTube
+</a>
+
 
 #### CONTRIBUTOR
 - MANOJ B E
