@@ -1,31 +1,32 @@
- <img src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?w=826&t=st=1679050803~exp=1679051403~hmac=eeff49229f8423ceb44d8fb2b0c7ba1fd8752bfe7801b67da63f810c0c1ecc53" height="50px"> <h2> Hello There</h2>
+<h2>Hello There</h2>
 
-This is Team Support_Bot, and this is a project on Forest Chatbot utilizing cutting-edge technologies such as Artificial Intelligence (AI), Natual Langauge Processing(NLP), Deep Learning (DL), on Intel oneAPI server using Intel oneDNN.👨
+This is Team Support_Bot, and this is a project on Forest Chatbot utilizing cutting-edge technologies such as Artificial Intelligence (AI), Natural Language Processing (NLP), Deep Learning (DL), on Intel oneAPI server using Intel oneDNN.👨
 
 ## 👯 Project Overview
 
-This project aims The chatbot will be trained to provide companionship for users and
-to provide an emotional support. The chatbot will be able to connect with individuals and provide necessary solutions and support
+This project aims to train the chatbot to provide companionship for users and offer emotional support. The chatbot will be able to connect with individuals and provide necessary solutions and support.
 
-## ⚡ Motivation Behind our Project
+## ⚡ Motivation Behind Our Project
 
-Due to the cases of stress, depressions due to loneliness are increasing and this has been the problem in the society. Because of lack of motivation, inspiration mnay youths are diverted towards wasting time and not being productive. This Bot aims to provide necessary response for the users problem in this
+Due to increasing cases of stress and depression caused by loneliness, this project seeks to help users overcome these challenges. Many youths struggle with a lack of motivation and productivity, and this bot aims to inspire and provide necessary responses to users' emotional concerns.
 
-## ⚡ Outcome of our Project
+## ⚡ Outcome of Our Project
 
-This Bot aims to provide necessary response for the users problem in this area,Bot gives necessary companionship in the case of lonliness
+The chatbot aims to provide emotional support and a sense of companionship for users experiencing loneliness or other emotional issues.
 
 ## 🤖 How to Use the Chatbot
 
-Our chatbot is designed to provide emotional support to users who may be experiencing loneliness or other difficult emotions. To use the chatbot, simply type in your messages to the bot and it will respond with relevant and supportive messages.
+To use the chatbot, simply type in your messages. The bot will respond with relevant and supportive messages aimed at helping you with your emotional needs.
 
 ## 🚀 Technologies Used
 
-Our chatbot is built using cutting-edge technologies such as Artificial Intelligence (AI), Natural Language Processing (NLP), and Deep Learning (DL). We utilized Intel oneAPI server and Intel oneDNN to power the chatbot and ensure high performance and accuracy. Python Kivy and KivyMD for front end, which is a cross platform applicastion software
+The chatbot is built with cutting-edge technologies like Artificial Intelligence (AI), Natural Language Processing (NLP), and Deep Learning (DL). We use the Intel oneAPI server and Intel oneDNN to power the chatbot for high performance. The front end is developed using Python Kivy and KivyMD, a cross-platform application framework.
 
 ### ✅ Demo Picture
-<img src = "assets/chatbot.png/">
-[![Chatbot](https://img.youtube.com/vi/PS9Vq3FfqcM&t=2s/0.jpg)](https://www.youtube.com/watch?v=PS9Vq3FfqcM&t=2s)
+<img src="assets/chatbot.png" alt="Chatbot Demo"/>
 
-CONTRIBUTOR
--MANOJ B E
+### 🎥 Demo Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PS9Vq3FfqcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### CONTRIBUTOR
+- MANOJ B E
